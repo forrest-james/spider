@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="The web-based bug tracker" />
+    <link href="/resources/css/main.min.css" rel="stylesheet" />
+    <meta name="keywords" content="project management, bug tracking, agile" />
+    <meta name="author" content="Forrest, James" />
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+
+    </footer>
+    <script src="~/resources/js/main-scripts.js"></script>
+    @RenderSection("page-scripts", false)
+</body>
+</html>

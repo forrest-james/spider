@@ -8,9 +8,40 @@
     <link href="/resources/css/main.min.css" rel="stylesheet" />
     <meta name="keywords" content="project management, bug tracking, agile" />
     <meta name="author" content="Forrest, James" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/solid.css" integrity="sha384-6qO6EOFIDfvv6uzAzozX/BvMu/qkIIHxWYOVMjpVjX+NtPuNyd3YiOEflKIIV2ka" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/fontawesome.css" integrity="sha384-Hx1dya9ptAdKu2hLNR5C2Cwgm+wCfwD0VMGE6jk5OUxxa9I58YfxOCwEtRog+3wk" crossorigin="anonymous">
 </head>
 <body>
-    <header>
+    <header id="site-header">
+        <nav>
+            <a class="navLink" href="#">
+                <i class="fas fa-home navLink__icon"></i>
+                <span class="navLink__text">Home</span>
+            </a>
+            <a class="navLink" href="#">
+                <i class="fas fa-project-diagram navLink__icon"></i>
+                <span class="navLink__text">Projects</span>
+            </a>
+            <a class="navLink" href="#">
+                <i class="fas fa-redo-alt navLink__icon"></i>
+                <span class="navLink__text">Sprints</span>
+            </a>
+            <a class="navLink" href="#">
+                <i class="fas fa-ticket-alt navLink__icon"></i>
+                <span class="navLink__text">Tickets</span>
+            </a>
+            <a class="navLink" href="#">
+                <i class="fas fa-tasks navLink__icon"></i>
+                <span class="navLink__text">Tasks</span>
+            </a>
+            <a class="navLink" href="#">
+                <i class="fas fa-cogs navLink__icon"></i>
+                <span class="navLink__text">Settings</span>
+            </a>
+            <a class="navLink" onclick="collapseHeader()">
+                <i class="fas fa-angle-double-left" id="header-toggle"></i>
+            </a>
+        </nav>        
     </header>
     <main>
         @RenderBody()
@@ -18,7 +49,7 @@
     <footer>
 
     </footer>
-    <script src="~/resources/js/main-scripts.js"></script>
+    <script src="/resources/js/main-scripts.js"></script>
     @RenderSection("page-scripts", false)
 </body>
 </html>

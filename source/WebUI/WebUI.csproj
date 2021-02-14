@@ -5,11 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Views\Shared\" />
-    <Folder Include="wwwroot\resources\css\" />
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\resources\css\main.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\resources\images\" />
-    <Folder Include="wwwroot\resources\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
   </ItemGroup>
 
 </Project>
